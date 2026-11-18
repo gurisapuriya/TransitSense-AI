@@ -1,0 +1,7 @@
+folder,name,version,format,license,url
+bus_occupancy,Bus Occupancy,Verify local export,YOLOv11,CC BY 4.0,https://universe.roboflow.com/bus-occupancy/bus-occupancy
+bus_seat_availability,Bus Seat Availability,Verify local export,YOLOv11,CC BY 4.0,https://universe.roboflow.com/qistinas-workspace/bus-seat-availability-detection
+people_counting,PCDS,Sample videos,AVI,CC BY-NC-SA 3.0,https://opendatalab.com/OpenDataLab/PCDS
+seat_occupancy,Inside Bus View,v3,YOLOv11,Public Domain,https://universe.roboflow.com/seat-occupancy/inside-bus-view/dataset/3
+trash_detection,Trash Detection,v1,YOLOv11,CC BY 4.0,https://universe.roboflow.com/fsd-qcpni/trash_detection-hhrjf/dataset/1
+water_spills,Water Spill Detection,v1,YOLOv11,CC BY 4.0,https://universe.roboflow.com/rongzhang/water-spill-mmtth-k0kpu/dataset/1
