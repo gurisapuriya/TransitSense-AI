@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+.DS_Store
+
+datasets/raw/
+datasets/processed/
+models/*.pt
+models/*.onnx
+models/*.blob
+
+runs/
+*.mp4
+*.zip
+
+.env
