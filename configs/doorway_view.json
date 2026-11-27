@@ -1,0 +1,5 @@
+{
+  "name": "Doorway camera", "aspect_ratio": 1.3333333333, "anchor": "center",
+  "zones": {"front": null, "middle": null, "rear": null}, "seats": {},
+  "passages": {}, "zone_capacities": {}
+}

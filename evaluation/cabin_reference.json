@@ -1,0 +1,84 @@
+[
+  {
+    "id": "quiet",
+    "source": "datasets/raw/seat_occupancy/test/images/20240130131206460_9c47c313fd1847c1932933172067d406_AA0986735_jpg.rf.e455fbadfb1a886b88bc999d61a7d141.jpg",
+    "visible_people": {
+      "front": 2,
+      "middle": 0,
+      "rear": 0
+    },
+    "seat_states": {
+      "1A": "occupied",
+      "1B": "uncertain",
+      "1C": "occupied",
+      "1D": "uncertain",
+      "2A": "available",
+      "2B": "available",
+      "2C": "uncertain",
+      "2D": "available"
+    },
+    "aisle_object_present": false,
+    "note": "Large bag on 1B. A bottle and front partition obscure 1D. Arms in front of 2C obscure its seating position.",
+    "phase": "calibration"
+  },
+  {
+    "id": "moderate",
+    "source": "datasets/raw/seat_occupancy/test/images/20240131092817700_9c47c313fd1847c1932933172067d406_AA0986735_jpg.rf.8a78c43a62754a57ab0f61f6055c5f27.jpg",
+    "visible_people": {
+      "front": 3,
+      "middle": 4,
+      "rear": 1
+    },
+    "seat_states": {
+      "1A": "uncertain",
+      "1B": "available",
+      "1C": "occupied",
+      "1D": "occupied",
+      "2A": "occupied",
+      "2B": "available",
+      "2C": "occupied",
+      "2D": "occupied"
+    },
+    "aisle_object_present": false,
+    "note": "The person leaning over the left window position obscures 1A. Their presence is counted in front.",
+    "phase": "calibration"
+  },
+  {
+    "id": "busy",
+    "source": "datasets/raw/seat_occupancy/test/images/20240131150615445_9c47c313fd1847c1932933172067d406_AA0986735_jpg.rf.9112706bc6277eafb4eede4e6338086d.jpg",
+    "visible_people": {
+      "front": 4,
+      "middle": 4,
+      "rear": 4
+    },
+    "seat_states": {
+      "1A": "occupied",
+      "1B": "occupied",
+      "1C": "occupied",
+      "1D": "occupied",
+      "2A": "occupied",
+      "2B": "available",
+      "2C": "occupied",
+      "2D": "available"
+    },
+    "aisle_object_present": false,
+    "note": "Rear count includes two partially visible passengers at the upper edge, a cap visible behind the middle-left passenger, and a passenger on the right. Bags are held at the seats.",
+    "phase": "calibration"
+  },
+  {
+    "id": "front_row",
+    "phase": "additional",
+    "source": "datasets/raw/seat_occupancy/test/images/20240205083527431_9c47c313fd1847c1932933172067d406_AA0986735_jpg.rf.814b63131fa2f14d777c05c63979dcbd.jpg",
+    "visible_people": {
+      "front": 4
+    },
+    "seat_states": {
+      "1A": "occupied",
+      "1B": "occupied",
+      "1C": "occupied",
+      "1D": "occupied"
+    },
+    "aisle_object_present": false,
+    "note": "Separate February image. Four people occupy the nearest row. Only the nearest row is scored. A standing person is in the aisle; no stationary luggage is visible on the aisle floor."
+  }
+]

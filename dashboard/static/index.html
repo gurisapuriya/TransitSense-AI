@@ -1,0 +1,12 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TransitSense | Operator console</title><link rel="stylesheet" href="/style.css"><script src="/app.js" defer></script></head>
+<body><header><div class="wrap top"><div class="brand"><span class="mark" aria-hidden="true">≋</span> TransitSense</div><span>Operator console</span></div></header>
+<main class="wrap"><section class="intro"><div><h1>Service overview</h1><p id="source">Loading measurements…</p></div>
+<label>Measurement source<select id="runs"><option>Loading…</option></select></label></section>
+<div class="metrics"><article><span>People in view</span><strong id="visible">—</strong></article><article><span>Boardings</span><strong id="boarding">—</strong></article><article><span>Alightings</span><strong id="alighting">—</strong></article><article><span>Seats marked available</span><strong id="available">—</strong></article></div>
+<div class="columns"><section class="panel geometry"><div class="panelhead"><h2>Camera coverage</h2><span id="quality">Waiting</span></div><div class="mapwrap"><svg id="map" viewBox="0 0 760 380" role="img" aria-label="Calibrated zones, seat rectangles, passage areas and counting line"></svg></div><div class="key"><span>Occupied</span><span>Available</span><span>Uncertain</span><span>Door line</span></div></section>
+<aside class="panel"><div class="panelhead"><h2>Passenger distribution</h2></div><div id="zones"></div><div class="panelhead small"><h2>Passage monitoring</h2></div><div id="passages"></div></aside></div>
+<section id="playback" class="panel play"><button id="play" type="button">Play</button><label for="seek">Replay position</label><input id="seek" type="range" step="0.01" min="0" max="1" value="0"><output id="time">0.0 s</output></section>
+<div class="columns lower"><section class="panel"><div class="panelhead"><h2>Mapped seats</h2><span id="seatTotal"></span></div><div id="seats"></div></section>
+<section class="panel"><div class="panelhead"><h2>Run details</h2></div><dl id="details"></dl></section></div>
+<p id="error" role="status"></p></main></body></html>

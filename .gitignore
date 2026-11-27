@@ -13,3 +13,5 @@ runs/
 *.zip
 
 .env
+results/doorway/
+results/monitor/

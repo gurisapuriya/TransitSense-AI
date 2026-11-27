@@ -1,0 +1,12 @@
+clip,direction,time_s
+sample_0006,boarding,1.80
+sample_0006,boarding,3.36
+sample_0006,boarding,6.64
+sample_0006,boarding,10.40
+sample_0006,boarding,13.04
+sample_0017,alighting,1.88
+sample_0017,alighting,3.52
+sample_0017,alighting,4.56
+sample_0019_queue,boarding,1.40
+sample_0019_queue,boarding,3.12
+sample_0019_queue,boarding,4.88

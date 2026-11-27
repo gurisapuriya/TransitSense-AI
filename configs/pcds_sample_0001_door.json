@@ -1,0 +1,8 @@
+{
+  "start": [0.25, 0.46],
+  "end": [0.77, 0.46],
+  "inside": [0.5, 0.81],
+  "margin_height_fraction": 0.035,
+  "max_gap_s": 0.24,
+  "confirm_frames": 2
+}
