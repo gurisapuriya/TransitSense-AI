@@ -34,7 +34,7 @@ python -m inference.monitor --oak --layout "$camera_layout" --device cpu \
   --seconds 60 --report results/monitor/oak.json
 ```
 
-During capture, run `python -m dashboard.serve` in a second terminal in the repository. The service reads `results/monitor/live.json` and serves the dashboard at `http://127.0.0.1:8765`.
+During capture, open a second terminal in the repository. On the project Mac, run `python3.13 -m dashboard.serve` for the Streamlit console. On another host, use the dashboard environment from the README or run `python3 -m dashboard.serve --basic` for the lightweight display. The service reads `results/monitor/live.json` and serves the dashboard at `http://127.0.0.1:8765`.
 
 ## Operator display on a Pi
 

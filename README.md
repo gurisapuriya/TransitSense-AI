@@ -4,13 +4,23 @@ TransitSense is a spatial-analysis course prototype for a transit operator. The 
 
 ## Open the operator console
 
-From the repository root, start the local service and open [the operator console](http://127.0.0.1:8765/).
+On the project Mac, start the Streamlit dashboard from the repository root using the installed Python 3.13, then open [the operator console](http://127.0.0.1:8765/).
 
 ```sh
-.venv/bin/python -m dashboard.serve
+python3.13 -m dashboard.serve
 ```
 
-The bundled examples need only Python 3 to serve. A [console screenshot](docs/operator-console.jpg) shows the controlled-stop replay. Select **Doorway · boarding video** for measurements from actual PCDS footage, **Cabin · busy still** for estimated distribution and mapped seats, or **Aisle · composite bag trial** for a detector-driven obstruction example. The **Controlled stop** replay shows every feature on a labelled synthetic detection sequence. Play, pause or scrub the source clock. The live option polls local aggregate measurements. Camera frames and passenger track IDs stay outside the operator API.
+On another host, install the dashboard packages in a dedicated environment. The inference process can keep using its own Python environment and write to the same aggregate state file.
+
+```sh
+python3.13 -m venv .venv-dashboard
+.venv-dashboard/bin/python -m pip install -r dashboard/requirements.txt
+.venv-dashboard/bin/python -m dashboard.serve
+```
+
+For a lightweight Pi installation, `python3 -m dashboard.serve --basic` serves the original console with the Python standard library. The launcher also uses that console when Streamlit is absent.
+
+A [console screenshot](docs/operator-console.jpg) shows the controlled-stop replay. Select **Doorway · boarding video** for measurements from actual PCDS footage, **Cabin · busy still** for estimated distribution and mapped seats, or **Aisle · composite bag trial** for a detector-driven obstruction example. The **Controlled stop** replay shows every feature on a labelled synthetic detection sequence. Play, pause or scrub the source clock. The live option polls local aggregate measurements. Camera frames and passenger track IDs stay outside the operator API.
 
 **Measured results.** The doorway counter matched 8 of 11 events on additional labelled footage, including 1 of 3 in the crowded queue, with zero extra events. The cabin pipeline matched 18 of 24 seat states on three calibration stills and 4 of 4 front-seat states in a separate image. The full detector pipeline flagged the sustained bag placement in the composite aisle trial. These experiments and their limitations are documented in the [evaluation report](docs/evaluation.md).
 
